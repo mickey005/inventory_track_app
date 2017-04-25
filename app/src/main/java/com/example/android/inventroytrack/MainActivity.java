@@ -7,9 +7,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
+import com.example.android.inventroytrack.data.InventoryDbHelper;
+
 public class MainActivity extends AppCompatActivity {
 
-
+    private final static String LOG_TAG=MainActivity.class.getCanonicalName();
+    InventoryDbHelper dbHelper;
+    StockCursorAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +35,16 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main,menu);
 
         return true;
+    }
+
+    public void clickOnViewItem(long id){
+        Intent intent = new Intent(this,DetailsActivity.class);
+        intent.putExtra("itemid",id);
+        startActivity(intent);
+    }
+
+    public void clickOnSale(long id,int quantity){
+        dbHelper.sellOneItem(id,quantity);
+        adapter.swapCursor(dbHelper.readStock());
     }
 }
