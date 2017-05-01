@@ -18,4 +18,16 @@
     <string name="image">Select Image</string>
     <string name="select_image">Image</string>
     <string name="sale_button">Sale</string>
+
+    <string name="editor_activity_title_new_item">Add new item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="order_message">you can placean order for this item by phone or e-mail</string>
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+    <string name="delete_message">Are you sure you want to Procede with the delection</string>
+    <string name="delete">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsaved_changes_dialog_msg">There are unsaved changes in the product information. Do you want to continue?</string>
 </resources>

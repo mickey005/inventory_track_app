@@ -1,4 +1,4 @@
-package com.example.android.inventroytrack.data;
+package com.example.android.inventroytrack;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -10,8 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.inventroytrack.MainActivity;
-import com.example.android.inventroytrack.R;
+import com.example.android.inventroytrack.data.StockContract;
 
 /**
  * Created by bitsbridge on 24/4/17.
@@ -31,7 +30,7 @@ public class StockCursorAdapter extends CursorAdapter {
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
 
-        return LayoutInflater.from(context).inflate(android.R.layout.activity_list_item,viewGroup,false);
+        return LayoutInflater.from(context).inflate(R.layout.list_item,viewGroup,false);
 
     }
 
