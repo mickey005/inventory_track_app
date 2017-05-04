@@ -15,6 +15,7 @@
     <string name="supplier_phone_hint">eg +91 7838640685</string>
     <string name="supplier_email_title">Supplier E-mail</string>
     <string name="supplier_email_hint">supplier@gmail.com </string>
+    <string name="hint_email_address">supplier@gmail.com</string>
     <string name="image">Select Image</string>
     <string name="select_image">Image</string>
     <string name="sale_button">Sale</string>

@@ -14,53 +14,53 @@ public class StockItem {
     private final String supplierEmail;
     private final String image;
 
-    public StockItem(String productName,String price,int quantity,String supplierName,String supplierPhone,
-                     String supplierEmail,String image){
-
-        this.productName=productName;
-        this.price=price;
-        this.quantity=quantity;
-        this.supplierName=supplierName;
-        this.supplierPhone=supplierPhone;
-        this.supplierEmail=supplierEmail;
-        this.image=image;
+    public StockItem(String productName, String price, int quantity, String supplierName, String supplierPhone, String supplierEmail, String image) {
+        this.productName = productName;
+        this.price = price;
+        this.quantity = quantity;
+        this.supplierName = supplierName;
+        this.supplierPhone = supplierPhone;
+        this.supplierEmail = supplierEmail;
+        this.image = image;
     }
 
-    public String getProductName(){
+    public String getProductName() {
         return productName;
     }
 
-    public String getPrice(){
+    public String getPrice() {
         return price;
     }
 
-    public int getQuantity(){
+    public int getQuantity() {
         return quantity;
     }
 
-    public String getSupplierName(){
+    public String getSupplierName() {
         return supplierName;
     }
 
-    public String getSupplierPhone()
-    {
+    public String getSupplierPhone() {
         return supplierPhone;
     }
-    public String getSupplierEmail(){
+
+    public String getSupplierEmail() {
         return supplierEmail;
     }
-    public String getImage(){
+
+    public String getImage() {
         return image;
     }
-
     @Override
     public String toString() {
-        return "StockItem{"+
-                "productName='" + productName +'\''+
-                ",price='"+price+'\''+
-                ",quantity='"+quantity +'\''+
-                ",supplierName='"+supplierName +'\''+
-                ",supplierPhone='"+supplierPhone+'\''+
-                ",supplierEmail='"+supplierEmail+'\''+'}';
+        return "StockItem{" +
+                "productName='" + productName + '\'' +
+                ", price='" + price + '\'' +
+                ", quantity=" + quantity +
+                ", supplierName='" + supplierName + '\'' +
+                ", supplierPhone='" + supplierPhone + '\'' +
+                ", supplierEmail='" + supplierEmail + '\'' +
+                '}';
     }
+
 }
